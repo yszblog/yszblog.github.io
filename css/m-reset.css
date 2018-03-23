@@ -1,0 +1,72 @@
+/*样式重置*/
+html,
+body {
+	/*font-size: 100px;*/
+  height: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {
+  -webkit-text-size-adjust: 100%!important;
+  /*禁止IOS调整字体大小*/
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /*去掉webkit默认的表单样式*/
+  border-radius: 0;
+}
+ul,
+li,
+ol,
+dl,
+dt,
+dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a,
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
+}
+a {
+  color: #333333;
+  text-decoration: none;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+}
+input:focus {
+  outline: none;
+}
+input::-webkit-input-placeholder {
+  color: #999;
+  /*修改webkit中input的planceholder样式*/
+}
+input::-webkit-input-speech-button {
+  display: none;
+  /*隐藏Android的语音输入按钮*/
+}
+/*使用box-shadow改变(挡住)表单自动填充后的黄色*/
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 1000px #fff;
+  box-shadow: inset 0 0 0 1000px #fff;
+}
