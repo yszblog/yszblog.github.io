@@ -7,7 +7,7 @@ var Routers = [
 		child: [{
 				router: 'blockMenuCheck',
 				name: '目录维护',
-				path: '/UEditorAdmin/components/blockMenu/blockMenuCheck',
+				path: '/components/blockMenu/blockMenuCheck',
 			}
 		]
 	},
@@ -18,12 +18,12 @@ var Routers = [
 		child: [{
 				router: 'blockDefine',
 				name: '区块定义',
-				path: '/UEditorAdmin/components/block/blockDefine',
+				path: '/components/block/blockDefine',
 			},
 			{
 				router: 'blockView',
 				name: '区块效果预览',
-				path: '/UEditorAdmin/components/block/blockView',
+				path: '/components/block/blockView',
 			}
 		]
 	},
@@ -34,7 +34,7 @@ var Routers = [
 		child: [{
 				router: 'channelCheck',
 				name: '频道查询',
-				path: '/UEditorAdmin/components/channel/channelCheck',
+				path: '/components/channel/channelCheck',
 			}
 		]
 	},
@@ -45,32 +45,32 @@ var Routers = [
 		child: [{
 				router: 'activityAdmin',
 				name: '活动管理',
-				path: '/UEditorAdmin/components/activity/activityAdmin',
+				path: '/components/activity/activityAdmin',
 			},
 			{
 				router: 'activityTemplate',
 				name: '活动模板',
-				path: '/UEditorAdmin/components/activity/activityTemplate',
+				path: '/components/activity/activityTemplate',
 			},
 			{
 				router: 'activityFill',
 				name: '活动区块添加',
-				path: '/UEditorAdmin/components/activity/activityFill',
+				path: '/components/activity/activityFill',
 			},
 			{
 				router: 'activityApprove',
 				name: '活动审批',
-				path: '/UEditorAdmin/components/activity/activityApprove',
+				path: '/components/activity/activityApprove',
 			},
 			{
 				router: 'activityMsg',
 				name: '活动信息',
-				path: '/UEditorAdmin/components/activity/activityMsg',
+				path: '/components/activity/activityMsg',
 			},
 			{
 				router: 'activityView',
 				name: '活动效果预览',
-				path: '/UEditorAdmin/components/activity/activityView',
+				path: '/components/activity/activityView',
 			}
 		]
 	},
@@ -81,12 +81,12 @@ var Routers = [
 		child: [{
 				router: 'white',
 				name: '活动白名单',
-				path: '/UEditorAdmin/components/filter/white',
+				path: '/components/filter/white',
 			},
 			{
 				router: 'black',
 				name: '活动黑名单',
-				path: '/UEditorAdmin/components/filter/black',
+				path: '/components/filter/black',
 			}
 		]
 	},
@@ -97,12 +97,12 @@ var Routers = [
 		child: [{
 				router: 'accountMsg',
 				name: '企业基本信息',
-				path: '/UEditorAdmin/components/account/accountMsg',
+				path: '/components/account/accountMsg',
 			},
 			{
 				router: 'accountAddMoney',
 				name: '企业账户充值',
-				path: '/UEditorAdmin/components/account/accountAddMoney',
+				path: '/components/account/accountAddMoney',
 			}
 		]
 	},
@@ -113,17 +113,17 @@ var Routers = [
 		child: [{
 				router: 'departmentAdmin',
 				name: '部门管理',
-				path: '/UEditorAdmin/components/userAdmin/departmentAdmin',
+				path: '/components/userAdmin/departmentAdmin',
 			},
 			{
 				router: 'roleAdmin',
 				name: '角色管理',
-				path: '/UEditorAdmin/components/userAdmin/roleAdmin',
+				path: '/components/userAdmin/roleAdmin',
 			},
 			{
 				router: 'usersAdmin',
 				name: '用户管理',
-				path: '/UEditorAdmin/components/userAdmin/usersAdmin',
+				path: '/components/userAdmin/usersAdmin',
 			}
 		]
 	},
@@ -134,17 +134,17 @@ var Routers = [
 		child: [{
 				router: 'time',
 				name: '活动时间分析',
-				path: '/UEditorAdmin/components/count/time',
+				path: '/components/count/time',
 			},
 			{
 				router: 'place',
 				name: '活动地点分析',
-				path: '/UEditorAdmin/components/count/place',
+				path: '/components/count/place',
 			},
 			{
 				router: 'people',
 				name: '活动人群分析',
-				path: '/UEditorAdmin/components/count/people',
+				path: '/components/count/people',
 			}
 		]
 	},
@@ -155,7 +155,7 @@ var Routers = [
 		child: [{
 				router: 'msgSeller',
 				name: '商家信息',
-				path: '/UEditorAdmin/components/seller/msgSeller',
+				path: '/components/seller/msgSeller',
 			}
 		]
 	},
@@ -166,12 +166,12 @@ var Routers = [
 		child: [{
 				router: '404',
 				name: '404页面',
-				path: '/UEditorAdmin/components/404',
+				path: '/components/404',
 			},
 			{
 				router: 'login',
 				name: '登录页面',
-				path: '/UEditorAdmin/login',
+				path: '/login',
 			}
 		]
 	}

@@ -3,7 +3,7 @@ $(function(){
 	window.addEventListener('load',function(){ 
 		var hash = window.location.hash.substr(1)
 		if (hash != '') {
-			var a = Routers.in_arr(hash) != false ? Routers.in_arr(hash) : '/UEditorAdmin/components/404'
+			var a = Routers.in_arr(hash) != false ? Routers.in_arr(hash) : '/components/404'
 			var iframeHref =window.location.protocol + '//' + window.location.host + a + '.html'
 			$('.main iframe').attr('src',iframeHref) //刷新页面定位刷新前页面
 			$('li[data-href=' + hash + ']').addClass('active').parent().prev().addClass('active') //刷新页面定位刷新前侧边栏样式
@@ -66,7 +66,7 @@ function asideHref(data) { //侧边栏页面跳转
 		$('.main iframe').attr('src',iframeHref)
 		history.pushState({},'','./#' + data) //地址栏添加hash
 	}else {
-		var iframeHref =window.location.protocol + '//' + window.location.host + '/UEditorAdmin/components/404.html'
+		var iframeHref =window.location.protocol + '//' + window.location.host + '/components/404.html'
 		$('.main iframe').attr('src',iframeHref)
 	}
 }

@@ -1,7 +1,7 @@
 //公用组件
 //判断当前页面是否在iframe中，后续删除
 if(top.location.href.indexOf('components') != -1 && top == this) {
-	var gohome = '<div class="gohome"><a href="http://192.168.2.101:8020/UEditorAdmin/index.html" title="返回首页"><i class="fa fa-home"></i></a></div>';
+	var gohome = '<div class="gohome"><a href="https://yszblog.github.io" title="返回首页"><i class="fa fa-home"></i></a></div>';
 	$('body').append(gohome);
 }
 $(function() {
