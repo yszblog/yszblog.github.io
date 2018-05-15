@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>商家信息</title>
+		<link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+	</head>
+
+	<body>
+		<div class="w">
+			<div class="tabGroup">
+				<div class="tabTitle clearfix"><span class="tabli onTab">基本信息</span></div>
+				<div class="tabBody">
+					<div class="tabMain onMain">
+						<div class="row">
+							<div class="col-sm-7">
+								<div class="ibox">
+									<div class="ibox-content no-borders">
+										<div class="input-group">
+											<input type="text" class="inputFxheight pull-left mr-r5 m-b-xs" placeholder="请输入关键字" />
+											<button class="btn btn-fx btn-sure pull-left mr-r5"><i class="fa fa-fw fa-search"></i>搜索</button>
+										</div>
+										<div class="clients-list">
+											<div class="tab-content">
+												<div class="tab-pane active" style="overflow-y: auto;height: 600px;">
+													<table class="table-default table table-striped table-bordered table-hover">
+														<colgroup>
+															<col>
+															<col width="30%">
+															<col>
+															<col>
+															<col>
+														</colgroup>
+														<thead>
+															<tr>
+																<th class="text-center"></th>
+																<th class="text-center">商家</th>
+																<th class="text-center">负责人</th>
+																<th class="text-center">联系方式</th>
+																<th class="text-center">操作</th>
+															</tr>
+														</thead>
+														<tbody class="text-center">
+															<tr>
+																<td class="client-avatar"><i class="fa fa-user"></i></td>
+																<td>驭箭信息科技有限公司</td>
+																<td>小明</td>
+																<td class="text-center">13888888888</td>
+																<td class="text-center">
+																	<button class="label label-primary no-borders">基本信息</button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-5">
+								<div class="ibox">
+									<div class="ibox-title">
+										<h5>详细信息</h5>
+									</div>
+									<div class="ibox-content clearfix">
+										<div class="m-b">
+											<img alt="image" class="img-responsive" src="" onerror="this.src='../../images/login-background.jpg'" / >
+										</div>
+										<div class="m-b m-t">
+											<h4><strong>驭箭信息科技有限公司</strong></h4>
+											<p><i class="fa fa-map-marker"></i> 上海市闵行区田州路159号莲花大厦1602室</p>
+											<h5>经营范围：</h5>
+											<p>
+												经营范围经营范围经营范围经营范围经营范围经营范围经营范围经营范围经营范围经营范围经营范围经营范围经营范围经营范围。
+											</p>
+											<div class="row m-t-lg">
+												<div class="col-sm-4">
+													<span>法人</span>
+													<h5><strong>王小二</strong></h5>
+												</div>
+												<div class="col-sm-4">
+													<span>邮箱</span>
+													<h5><strong>a123456@163.com</strong></h5>
+												</div>
+												<div class="col-sm-4">
+													<span>邮编</span>
+													<h5><strong>200000</strong></h5>
+												</div>
+											</div>
+										</div>
+										<button class="btn btn-cancel btn-fx pull-right accountSeller">账户信息</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../../js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../plugins/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/root.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('body').on('click','.accountSeller',function(){
+					layer.open({
+						type: 2,
+						title: '银行账户信息',
+						area: ['100%','100%'],
+						content: 'accountSeller.html',
+						success: function (){
+							
+						}
+					})
+				})
+				
+			})
+		</script>
+	</body>
+
+</html>

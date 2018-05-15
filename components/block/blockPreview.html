@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>活动预览</title>
+		<link rel="stylesheet" type="text/css" href="../../css/index.css" />
+		<style type="text/css">
+			.w {
+				padding: 0;
+				margin: 0 auto;
+				max-width: 500px;
+			}
+			
+			.scrollHtml {
+				width: 100%;
+				height: 100%;
+				margin-bottom: 35px;
+			}
+			
+			body,
+			html {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				overflow-y: auto;
+			}
+			
+			iframe {
+				border: none;
+				margin: 0;
+			}
+			
+			img {
+				max-width: 100%;
+			}
+			
+			.fenxiang {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				background: #FFFFFF;
+				height: 40px;
+				width: 100%;
+				box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, .3);
+				box-sizing: border-box;
+				padding: 5px;
+				z-index: 999;
+			}
+			
+			.shadow {
+				background: rgba(0, 0, 0, .2) !important;
+				overflow: hidden !important;
+			}
+			
+			.shadow .layui-layer-setwin {
+				right: 35px !important;
+				top: 35px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="../../js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../plugins/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/root.js" type="text/javascript" charset="utf-8"></script>
+		<!--模块代码容器-->
+		<div class="scrollHtml"></div>
+		<div class="fenxiang">
+			<a href="javascript:;" class="btn btn-danger btn-block repeat">分享可领取至少15元红包 >>></a>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				//红包弹出 效果
+				$('.repeat').click(function() {
+					layer.open({
+						type: 2,
+						title: false,
+						closeBtn: 1,
+						skin: 'shadow',
+						shadeClose: true,
+						content: '../subblock/ContentHongBao.html',
+						area: ['100%', '100%'],
+						success: function() {
+
+						}
+					})
+
+				})
+				//单独文本，图片
+				var TextPhoto = [
+					'../subblock/Text.html',
+					'../subblock/Photo.html',
+				]
+				//标题
+				var TitleBlockURL = [
+					'../subblock/Title.html',
+					'../subblock/Title1.html',
+					'../subblock/Title2.html',
+					'../subblock/Title3.html',
+					'../subblock/Title4.html',
+					'../subblock/Title5.html',
+					'../subblock/Title6.html',
+					'../subblock/Title7.html',
+					'../subblock/Title8.html',
+					'../subblock/Title9.html',
+				]
+				//内容
+				var ContentBlockURL = [
+					'../subblock/ContentText.html',
+					'../subblock/ContentText1.html',
+					'../subblock/ContentText2.html',
+					'../subblock/ContentText3.html',
+					'../subblock/ContentText4.html',
+					'../subblock/ContentText5.html',
+					'../subblock/ContentText6.html',
+					'../subblock/ContentTimeAxis.html',
+					'../subblock/ContentTimeAxis1.html',
+					'../subblock/ContentHongBao.html',
+					'../subblock/ContentPhotoText.html',
+					'../subblock/ContentPhotoText1.html',
+					'../subblock/ContentPhotoText2.html',
+					'../subblock/ContentPhotoText3.html',
+					'../subblock/ContentPhotoText4.html',
+					'../subblock/ContentPhotoText5.html',
+					'../subblock/ContentPhotoText6.html',
+					'../subblock/ContentPhotoText7.html',
+					'../subblock/ContentText7.html',
+					'../subblock/ContentPhotoText8.html',
+					'../subblock/ContentPhotoText9.html',
+					'../subblock/ContentPhotoText10.html',
+					'../subblock/ContentPhotoText11.html',
+					'../subblock/ContentPhotoText12.html',
+					'../subblock/ContentText8.html',
+					'../subblock/ContentPhotoText13.html',
+					'../subblock/ContentPhotoText14.html',
+					'../subblock/Space.html',
+				]
+				//分割线
+				var DelimiterBlockURL = [
+					'../subblock/Delimiter.html',
+					'../subblock/Delimiter1.html',
+					'../subblock/Delimiter2.html',
+					'../subblock/Delimiter3.html',
+				]
+				//底部
+				var FooterBlockURL = [
+					'../subblock/Ewm.html',
+					'../subblock/Footer.html',
+					'../subblock/Footer1.html',
+					'../subblock/Footer2.html',
+					'../subblock/Footer3.html',
+					'../subblock/Footer4.html',
+					'../subblock/Footer5.html',
+					'../subblock/FooterLink.html',
+					'../subblock/FooterLink1.html',
+					'../subblock/FooterLink2.html',
+				]
+				//模板
+				var TemplateURL = [
+					'../template/TemplateFinance.html',
+					'../template/TemplatePromote.html',
+					'../template/TemplatePromote1.html',
+					'../template/TemplateRecruit.html',
+					'../template/TemplateShop.html',
+					'../template/TemplateShop1.html',
+					'../template/TemplateShop2.html',
+					'../template/TemplateShop3.html',
+					'../template/TemplateShop4.html',
+					'../template/TemplateMinimalism.html',
+					'../template/TemplateRestaurant.html',
+					'../template/TemplateRestaurant1.html',
+					'../template/TemplateShop5.html',
+					'../template/TemplateCommon.html',
+					'../template/TemplateCommon1.html',
+					'../template/TemplateCommon2.html',
+				]
+				
+				var hash = ''
+				var blockIndex = 0
+				addViewBlock()
+				window.onhashchange = function() { //监听hash改变
+					addViewBlock()
+				}
+
+				function addViewBlock() {
+					var activity = []
+					hash = window.location.hash
+					blockIndex = hash.substr(hash.indexOf('&') + 1)
+					hash = hash.substr(1, hash.indexOf('&') - 1)
+					if(hash == '') {
+						hash = window.location.hash.substr(1)
+					}
+					var num = blockIndex - 0
+					//添加字符串到数组
+					switch(hash) {
+						case 'TextPhoto':
+							isNaN(num) ? activity = activity.concat(TextPhoto) : activity.push(TextPhoto[blockIndex])
+							break;
+						case 'TitleBlockURL':
+							isNaN(num) ? activity = activity.concat(TitleBlockURL) : activity.push(TitleBlockURL[blockIndex])
+							break;
+						case 'ContentBlockURL':
+							isNaN(num) ? activity = activity.concat(ContentBlockURL) : activity.push(ContentBlockURL[blockIndex])
+							break;
+						case 'DelimiterBlockURL':
+							isNaN(num) ? activity = activity.concat(DelimiterBlockURL) : activity.push(DelimiterBlockURL[blockIndex])
+							break;
+						case 'FooterBlockURL':
+							isNaN(num) ? activity = activity.concat(FooterBlockURL) : activity.push(FooterBlockURL[blockIndex])
+							break;
+						case 'TemplateURL':
+							isNaN(num) ? activity = activity.concat(TemplateURL) : activity.push(TemplateURL[blockIndex])
+							break;
+						default:
+							alert('出现未知错误。')
+							break;
+					}
+					$('.scrollHtml').html('')
+					activity.forEach(function(item) {
+						if (activity.length > 1) {		
+							ajaxBlock($('.scrollHtml'), item, true)
+						} else {							
+							ajaxBlock($('.scrollHtml'), item)
+						}
+					})
+				}
+
+				function ajaxBlock(ele, url, flag) { //利用ajax获取页面元素
+					$.ajax({
+						type: "get",
+						url: url,
+						async: false,
+						success: function(data) {
+							var bodyStart = data.indexOf('<body>') + 6
+							var bodyEnd = data.indexOf('</body>')
+							data = data.substr(bodyStart, bodyEnd)
+							if (flag) {
+								ele.append(data)
+							} else {								
+								ele.html(data)
+							}
+						},
+						error: function(e) {
+							e = '<style>h3,h2,h4,h5,h6{font-size:12px;width: 100%;word-wrap: break-word;}</style>' + e.responseText
+							ele.append(e)
+						}
+					})
+				} //end ajaxBlock
+			})
+		</script>
+
+	</body>
+
+</html>
